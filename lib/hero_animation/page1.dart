@@ -8,7 +8,7 @@ class Page1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Hero Animation"),
+        title: const Text("Hero Animation"),
       ),
       body: Align(
         alignment: Alignment.centerLeft,
@@ -17,7 +17,7 @@ class Page1 extends StatelessWidget {
             context,
             MaterialPageRoute(builder: (context) => const Page2()),
           );},
-          child:  Hero(
+          child:  const Hero(
             tag: "DemoTag",
             child: Icon(
               Icons.add,

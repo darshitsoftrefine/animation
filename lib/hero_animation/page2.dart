@@ -11,15 +11,12 @@ class Page2 extends StatelessWidget {
           onTap: () {Navigator.pop(context);},
           child: Hero(
             tag: "DemoTag",
-            child: Icon(
-              Icons.add,
-              size: 150.0,
-            ),
             transitionOnUserGestures: true,
             flightShuttleBuilder: (flightContext, animation, direction,
                 fromContext, toContext) {
-              return Icon(Icons.rocket, size: 150.0,);
+              return const Icon(Icons.rocket, size: 150.0,);
             },
+            child: const Icon(Icons.add, size: 150.0,),
           ),
         ),
       ),

@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             MaterialPageRoute(builder: (context) => const Page1()),
           );
         },
-    child: Text("Hero Animation")
+        child: const Text("Hero Animation")
     ),
     );
   }

@@ -5,10 +5,10 @@ class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  MyHomePageState createState() => MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class MyHomePageState extends State<MyHomePage> {
   bool selected = false;
 
   @override
@@ -48,8 +48,8 @@ class _MyHomePageState extends State<MyHomePage> {
           width: 50,
           height: 60,
           decoration: const BoxDecoration(color: Colors.teal,),
-          child: Padding(
-            padding: const EdgeInsets.only(bottom: 18.0, top: 5.0),
+          child: const Padding(
+            padding: EdgeInsets.only(bottom: 18.0, top: 5.0),
             child: Center(
               child: Text("Navigate"),
             ),
